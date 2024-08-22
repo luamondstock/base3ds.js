@@ -36,7 +36,16 @@ function nomeIdade(nome,idade){
     return `Meu nome é ${nome}, e minha idade é ${idade}`
 }
  imprimeTexto(nomeIdade("Lua", 17))
- imprimeTexto(nomeIdade)
+  // A ordem dos parâmetros é importante!!
+imprimeTexto(nomeIdade("Lua", 17))
+imprimeTexto(nomeIdade(22, "ricardão"))
+
+imprimeTexto(multiplicao())
+// Você pode definir um parâmetro inicial para sua função 
+function multiplicao(numero4 = 2, numero5 = 5){
+    return numero4 * numero5
+}
+imprimeTexto(multiplicao(somaDeNumeros(3,4),somaDeNumeros(5,10)));
 
 
 
